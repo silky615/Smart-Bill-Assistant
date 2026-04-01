@@ -24,19 +24,19 @@ Instead of calling customer support, users can simply paste or speak their bill 
 - **Llama-3.1-8b-instant** — Intent detection + lightweight tasks
 
 ### Backend
-- **Python**
-- **Flask (REST API)**
-  - `/analyze` → Bill explanation
-  - `/chat` → Conversational queries
+- **Node.js** + **Express** (REST API)
+  - Examples: `/api/auth/login`, `/api/me`, `/api/chat`, `/api/bill-summary`, `/api/payments/pay`, `/api/bills/raw`
 
 ### Frontend
-- **HTML + CSS + JavaScript (Vanilla)**
-- **Fetch API** for backend communication
+- **Vite** + **React** + **TypeScript**
+- **React Router**; dev server proxies `/api` to the backend
 
-### Infrastructure
-- **IBM LinuxONE (Ubuntu VM - s390x)**
-- **SSH Tunneling** for local access
-- No Docker (kept simple for speed)
+### Running locally
+- Backend: `cd backend && npm install && npm start` (default port **3001**)
+- Frontend: `cd frontend && npm install && npm run dev` (default **5173**)
+
+### Repository history
+- Earlier commits used a Python/Flask sketch; the current app is the Node/React stack above. Git history preserves those commits.
 
 
 
