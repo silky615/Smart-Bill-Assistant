@@ -1,0 +1,55 @@
+@import "./verizon.css";
+
+:root {
+  --vz-red: #e4002b;
+  --vz-red-dark: #c40024;
+  --vz-bg: #f0f2f5;
+  --vz-card: #ffffff;
+  --vz-border: #e5e7eb;
+  --vz-text: #111827;
+  --vz-muted: #6b7280;
+  --vz-green: #2e7d32;
+  --vz-green-bar: #22c55e;
+  --vz-warn-bg: #fffbeb;
+  --vz-warn-border: #f59e0b;
+  --vz-ai-pink-bg: #fff1f2;
+  --vz-ai-pink-border: #fda4af;
+  --vz-blue-bg: #f0f7ff;
+  --vz-blue-border: #c7ddff;
+  --vz-blue-btn: #1a73e8;
+  --vz-radius: 12px;
+  --vz-font: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  font-family: var(--vz-font);
+  background: var(--vz-bg);
+  color: var(--vz-text);
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+}
+
+input,
+textarea {
+  font-family: inherit;
+}
